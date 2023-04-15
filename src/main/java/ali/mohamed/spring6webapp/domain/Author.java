@@ -42,4 +42,14 @@ public class Author {
     public void setLastName(String lastName) {
         LastName = lastName;
     }
+
+    @Override
+    public String toString() {
+        return "Author{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", LastName='" + LastName + '\'' +
+                ", books=" + books +
+                '}';
+    }
 }
