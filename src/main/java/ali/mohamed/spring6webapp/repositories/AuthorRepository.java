@@ -1,4 +1,4 @@
-package ali.mohamed.spring6webapp.domain.repositories;
+package ali.mohamed.spring6webapp.repositories;
 
 import ali.mohamed.spring6webapp.domain.Author;
 import org.springframework.data.repository.CrudRepository;
