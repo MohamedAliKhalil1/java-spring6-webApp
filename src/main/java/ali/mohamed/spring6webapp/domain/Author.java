@@ -15,7 +15,7 @@ public class Author {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String firstName;
-    private String LastName;
+    private String lastName;
 
     @ManyToMany(mappedBy = "authors")
     private Set<Book> books = new HashSet<Book>();
@@ -45,11 +45,11 @@ public class Author {
     }
 
     public String getLastName() {
-        return LastName;
+        return lastName;
     }
 
     public void setLastName(String lastName) {
-        LastName = lastName;
+        this.lastName = lastName;
     }
 
     @Override
@@ -57,7 +57,7 @@ public class Author {
         return "Author{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
-                ", LastName='" + LastName + '\'' +
+                ", LastName='" + lastName + '\'' +
                 ", books=" + books +
                 '}';
     }
